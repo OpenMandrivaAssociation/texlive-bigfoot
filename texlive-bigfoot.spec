@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/bigfoot
+# catalog-date 2007-08-13 15:44:25 +0200
+# catalog-license gpl2
+# catalog-version undef
 Name:		texlive-bigfoot
 Version:	20070813
 Release:	1
@@ -61,6 +67,7 @@ provides the perpage and suffix packages.
 %doc %{_texmfdistdir}/source/latex/bigfoot/perpage.dtx
 %doc %{_texmfdistdir}/source/latex/bigfoot/suffix.drv
 %doc %{_texmfdistdir}/source/latex/bigfoot/suffix.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -71,3 +78,5 @@ provides the perpage and suffix packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
