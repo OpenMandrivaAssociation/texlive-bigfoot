@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-bigfoot
 Version:	20070813
-Release:	5
+Release:	6
 Summary:	Footnotes for critical editions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bigfoot
