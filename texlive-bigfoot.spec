@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/bigfoot
-# catalog-date 2007-08-13 15:44:25 +0200
-# catalog-license gpl2
-# catalog-version undef
 Name:		texlive-bigfoot
-Version:	20070813
-Release:	10
+Version:	2.1
+Release:	1
 Summary:	Footnotes for critical editions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bigfoot
@@ -42,21 +36,10 @@ provides the perpage and suffix packages.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/bigfoot/bigfoot.sty
-%{_texmfdistdir}/tex/latex/bigfoot/perpage.sty
-%{_texmfdistdir}/tex/latex/bigfoot/suffix.sty
-%doc %{_texmfdistdir}/doc/latex/bigfoot/README
-%doc %{_texmfdistdir}/doc/latex/bigfoot/bigfoot.pdf
-%doc %{_texmfdistdir}/doc/latex/bigfoot/perpage.pdf
-%doc %{_texmfdistdir}/doc/latex/bigfoot/suffix.pdf
+%{_texmfdistdir}/tex/latex/bigfoot
+%doc %{_texmfdistdir}/doc/latex/bigfoot
 #- source
-%doc %{_texmfdistdir}/source/latex/bigfoot/bigfoot.drv
-%doc %{_texmfdistdir}/source/latex/bigfoot/bigfoot.dtx
-%doc %{_texmfdistdir}/source/latex/bigfoot/bigfoot.ins
-%doc %{_texmfdistdir}/source/latex/bigfoot/perpage.drv
-%doc %{_texmfdistdir}/source/latex/bigfoot/perpage.dtx
-%doc %{_texmfdistdir}/source/latex/bigfoot/suffix.drv
-%doc %{_texmfdistdir}/source/latex/bigfoot/suffix.dtx
+%doc %{_texmfdistdir}/source/latex/bigfoot
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,18 +50,3 @@ provides the perpage and suffix packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070813-2
-+ Revision: 749700
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070813-1
-+ Revision: 717946
-- texlive-bigfoot
-- texlive-bigfoot
-- texlive-bigfoot
-- texlive-bigfoot
-- texlive-bigfoot
-
