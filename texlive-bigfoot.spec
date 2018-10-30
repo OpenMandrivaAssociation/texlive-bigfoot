@@ -1,6 +1,6 @@
 Name:		texlive-bigfoot
 Version:	2.1
-Release:	2
+Release:	3
 Summary:	Footnotes for critical editions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bigfoot
