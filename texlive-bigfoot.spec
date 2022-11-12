@@ -1,13 +1,13 @@
 Name:		texlive-bigfoot
-Version:	2.1
-Release:	3
+Version:	38248
+Release:	1
 Summary:	Footnotes for critical editions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bigfoot
 License:	GPL2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.r38248.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.doc.r38248.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.source.r38248.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +27,12 @@ from that package's documentation. The bigfoot bundle also
 provides the perpage and suffix packages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +43,8 @@ provides the perpage and suffix packages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
