@@ -5,9 +5,9 @@ Summary:	Footnotes for critical editions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bigfoot
 License:	GPL2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.r38248.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.doc.r38248.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.source.r38248.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
