@@ -3,7 +3,7 @@ Version:	38248
 Release:	2
 Summary:	Footnotes for critical editions
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bigfoot
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/bigfoot
 License:	GPL2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bigfoot.doc.r%{version}.tar.xz
